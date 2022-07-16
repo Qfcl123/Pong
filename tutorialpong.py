@@ -1,5 +1,4 @@
 import turtle
-import windsound
 wn = turtle.Screen()
 wn.title("Pong")
 wn.bgcolor("blue")
@@ -94,11 +93,11 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
-        windsound.PlaySound("aplay test.wav", windsound.SND_ASYNC)
+       
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
-        windsound.PlaySound("aplay test.wav", windsound.SND_ASYNC)
+        
     if ball.xcor() > 390:
         ball.goto(0, 0)
         ball.dx *= -1
@@ -118,9 +117,9 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
         ball.setx(340)
         ball.dx *= -1
-        windsound.PlaySound("aplay test.wav", windsound.SND_ASYNC)
+      
 
     if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() -40):
         ball.setx(-340)
         ball.dx *= -1
-        windsound.PlaySound("aplay test.wav", windsound.SND_ASYNC)
+      
