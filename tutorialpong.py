@@ -45,11 +45,11 @@ ball.dy = -1
 
 pen = turtle.Turtle()
 pen.speed(0)
-pen.color("red")
+pen.color("green")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, 260)
-pen.write("Player 1: 0 Player 2: 0", align="center", font=("Courier", 24, "normal"))
+pen.write("Player 1: 0 Player 2: 0", align="center", font=("Courier", 24, "bold"))
 def paddle_a_up():
     y = paddle_a.ycor()
     y += 20
@@ -103,14 +103,14 @@ while True:
         ball.dx *= -1
         score_a +=1
         pen.clear()
-        pen.write("Player 1: {} Player 2: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+        pen.write("Player 1: {} Player 2: {}".format(score_a, score_b), align="center", font=("Courier", 24, "bold"))
         wn.bgcolor("red")
     if ball.xcor() < -390:
         ball.goto(0, 0)
         ball.dx *= -1
         score_b +=1
         pen.clear()
-        pen.write("Player 1: {} Player 2: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+        pen.write("Player 1: {} Player 2: {}".format(score_a, score_b), align="center", font=("Courier", 24, "bold"))
         wn.bgcolor("blue")
 
         
