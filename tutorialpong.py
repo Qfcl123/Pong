@@ -42,7 +42,7 @@ ball.penup()
 ball.goto(0, 0)
 ball.dx = 1
 ball.dy = -1
-
+ball.shapesize(stretch_wid=2, stretch_len=2)
 pen = turtle.Turtle()
 pen.speed(0)
 pen.color("green")
